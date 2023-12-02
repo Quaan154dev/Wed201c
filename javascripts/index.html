@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document1</title>
+</head>
+<body>
+    <p>
+        <h2 class="quan dao">Validate me11!</h2>
+    </p>
+    <div id = "myElement">
+        <p style="display: none; font-size: 40;">1Hello , world !</p><p>2Hello , world !</p>
+    </div>
+    <div class = "Box">
+        <p>Hello , world !</p>
+    </div>
+    <div id = "myElement">
+        <p>Hello , world !</p>
+    </div>
+    <button id = "changeContentButton" class="btn1 btn2 btn3">ChangeContent</button>
+    <script>
+    const buttonHTML2  = document.getElementById("changeContentButton");
+    console.log("buttonHTML2 :"+buttonHTML2.classList.add("btn5"));
+      // tag name   
+      // id 
+      // class
+
+    //   const titleHTML = document.getElementsByTagName('div');
+    //   console.log(titleHTML);
+
+    //   const  boxHTML = document.getElementsByClassName('Box');
+    //   console.log(boxHTML);
+
+      const  myElementHTML = document.getElementById('myElement');
+    //   console.log(myElementHTML);
+
+    //   const  a =  document.querySelector("#myElement");
+    //   console.log(a);
+
+      const buttonHTML = document.getElementsByTagName("button")[0];
+      console.log(buttonHTML.getAttribute("id"));
+    //   console.log(buttonHTML.setAttribute("class","quandayne"));// thay đổi
+
+    // - innerText và textContent
+    const  myElementHTML2 = document.getElementById('myElement');
+    console.log("innerText :"+myElementHTML2.innerText); // giống trong mh 
+    console.log("textContent :"+myElementHTML2.textContent);// giống trong source code
+
+    // innerHTML và outerHTML 
+    console.log("innerHTML và outerHTML :");
+    console.log(myElementHTML.innerHTML);
+    console.log(myElementHTML.outerHTML);
+    // change
+    myElementHTML.innerHTML =  "<h1>anhquandao</h1>"
+    // console.log("interHTML change :"+myElementHTML.innerHTML);
+    //  myElementHTML.outerHTML = "<h1>anhquandao</h1>"
+    myElementHTML.outerHTML = `<div class = "Box2">
+        <p>Hello22222 , world 123!</p>
+        </div>`
+    console.log("outerHTML change :"+myElementHTML.outerHTML);
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.box_far{
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box_chi{
+
+    
+
+}
